@@ -1,0 +1,42 @@
+:root{
+  --max-width:1100px;
+  --gap:1.25rem;
+  --accent:#f0b400;
+  --bg:#fff;
+  --text:#222;
+  --muted:#666;
+  --radius:12px;
+  --container-padding:1rem;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0; color:var(--text); background:var(--bg); line-height:1.5;
+}
+.container{
+  max-width:var(--max-width); margin:0 auto; padding:var(--container-padding);
+}
+
+.site-header{background:#fff; border-bottom:1px solid #eee; position:sticky; top:0; z-index:10;}
+.header-inner{display:flex; align-items:center; justify-content:space-between; gap:var(--gap)}
+.logo{height:44px; width:auto}
+.main-nav a{margin-left:12px; text-decoration:none; color:var(--muted); font-weight:600}
+.hero{padding:2.5rem 0; text-align:center; background:linear-gradient(180deg,#fff,#fff); }
+.hero h1{margin:0 0 .5rem; font-size:1.8rem}
+.lead{color:var(--muted); margin:0 0 1rem}
+
+.section{padding:1.25rem 0;}
+.grid{display:grid; gap:1rem; grid-template-columns:repeat(3,1fr)}
+.grid.small{grid-template-columns:repeat(2,1fr)}
+.card{background:#fafafa; border-radius:var(--radius); padding:1rem; text-align:center}
+.card img{max-width:100%; height:160px; object-fit:cover; border-radius:8px 8px 6px 6px}
+
+.site-footer{border-top:1px solid #eee; padding:1rem 0; text-align:center; color:var(--muted); font-size:.9rem}
+
+/* Responsive */
+@media (max-width:800px){
+  .grid{grid-template-columns:1fr}
+  .main-nav{display:none}
+  .hero h1{font-size:1.4rem}
+}
