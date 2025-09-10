@@ -17,4 +17,31 @@ Sitio personal con biografía, hobbies e identidad visual, creado para el reto d
 ---
 
 ##  Estructura del proyecto (rama `dev`)
+├── index.html
+├── styles.css
+├── assets/
+│ ├── images/
+│ │ ├── hobby_pintura.png
+│ │ ├── hobby_costura.png
+│ │ └── hobby_lectura.png
+│ └── logos/
+│ ├── logo.png (opcional: logo.svg)
+│ ├── mockup_tote.png
+│ └── mockup_camisa.png
+└── README.md
+
+---
+
+##  Flujo de trabajo recomendado
+1. Trabajar cambios en la rama `dev`.  
+2. Crear **Pull Request** hacia `main` cuando estés lista.  
+3. Revisar y, si todo está bien, hacer merge.  
+4. Mantener la rama `main` solo con la versión estable.  
+
+---
+
+##  Evidencia
+**Captura del sitio en producción:**  
+![Sitio en vivo](14_site_online.png)
+
 
