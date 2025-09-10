@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Página personal - Proyecto Web con IA integrada" />
+  <title>OZAL - Proyecto Web con IA</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <img src="assets/logos/logo.png" alt="Logo OZAL" class="logo" />
+      <nav class="main-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#bio">Biografía</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="container">
+        <h1>OZAL — Cada persona es un lienzo</h1>
+        <p class="lead">Estampados, arte y proyectos que cuentan historias.</p>
+      </div>
+    </section>
+
+    <section id="bio" class="container section">
+      <h2>Biografía</h2>
+      <p><!-- Pegar aquí la biografía que generes con ChatGPT --> </p>
+    </section>
+
+    <section id="hobbies" class="container section">
+      <h2>Hobbies</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="assets/images/hobby_pintura.png" alt="Pintura" loading="lazy" />
+          <h3>Pintura</h3>
+          <p><!-- Texto hobby pintura --> </p>
+        </article>
+        <article class="card">
+          <img src="assets/images/hobby_costura.png" alt="Costura" loading="lazy" />
+          <h3>Costura</h3>
+          <p><!-- Texto hobby costura --> </p>
+        </article>
+        <article class="card">
+          <img src="assets/images/hobby_lectura.png" alt="Lectura" loading="lazy" />
+          <h3>Lectura</h3>
+          <p><!-- Texto hobby lectura --> </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="productos" class="container section">
+      <h2>Productos</h2>
+      <p>Mockups y diseños de camisetas y tote bags.</p>
+      <div class="grid small">
+        <img src="assets/logos/mockup_tote.png" alt="Mockup tote" loading="lazy" />
+        <img src="assets/logos/mockup_camisa.png" alt="Mockup camisa" loading="lazy" />
+      </div>
+    </section>
+
+    <section id="contacto" class="container section">
+      <h2>Contacto</h2>
+      <p>Email: tu-email@ejemplo.com</p>
+      <p>Redes: Instagram / Facebook</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> OZAL. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Pequeño script para el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
